@@ -13,6 +13,7 @@
 		57ED6099266863FE0004D534 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57ED6097266863FE0004D534 /* Main.storyboard */; };
 		57ED609B266863FF0004D534 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57ED609A266863FF0004D534 /* Assets.xcassets */; };
 		57ED609E266863FF0004D534 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57ED609C266863FF0004D534 /* LaunchScreen.storyboard */; };
+		57ED60AC26686A120004D534 /* DogAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57ED60AB26686A120004D534 /* DogAPI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		57ED609A266863FF0004D534 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		57ED609D266863FF0004D534 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		57ED609F266863FF0004D534 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		57ED60AB26686A120004D534 /* DogAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogAPI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		57ED6090266863FE0004D534 /* Randog */ = {
 			isa = PBXGroup;
 			children = (
+				57ED60AA266869F90004D534 /* Model */,
 				57ED60A6266864830004D534 /* Controller */,
 				57ED6093266863FE0004D534 /* SceneDelegate.swift */,
 				57ED60A52668642C0004D534 /* View */,
@@ -81,6 +84,14 @@
 				57ED6095266863FE0004D534 /* ViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		57ED60AA266869F90004D534 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				57ED60AB26686A120004D534 /* DogAPI.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,6 +167,7 @@
 				57ED6096266863FE0004D534 /* ViewController.swift in Sources */,
 				57ED6092266863FE0004D534 /* AppDelegate.swift in Sources */,
 				57ED6094266863FE0004D534 /* SceneDelegate.swift in Sources */,
+				57ED60AC26686A120004D534 /* DogAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
