@@ -58,9 +58,9 @@
 		57ED6090266863FE0004D534 /* Randog */ = {
 			isa = PBXGroup;
 			children = (
+				57ED6093266863FE0004D534 /* SceneDelegate.swift */,
 				57ED60AA266869F90004D534 /* Model */,
 				57ED60A6266864830004D534 /* Controller */,
-				57ED6093266863FE0004D534 /* SceneDelegate.swift */,
 				57ED60A52668642C0004D534 /* View */,
 				57ED609F266863FF0004D534 /* Info.plist */,
 			);
