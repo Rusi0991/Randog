@@ -30,6 +30,16 @@ class ViewController: UIViewController {
             let decoder = JSONDecoder()
             let imageData = try! decoder.decode(DogImage.self, from: data)
             print(imageData)
+            guard let imageUrl = URL(string: imageData.message) else{
+                return
+            }
+            let task = URLSession.shared.dataTask(with: imageUrl) { (data, response, error) in
+                guard let data = data else{
+                    return
+                    
+                }
+                let downloadedImage = UIImage(data: data)
+            }
         }
         task.resume()
     }
