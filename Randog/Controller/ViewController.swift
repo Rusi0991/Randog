@@ -11,8 +11,13 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var imageView: UIImageView!
     
+    @IBOutlet weak var pickeView: UIPickerView!
+    let breeds : [String] = ["greyhound", "poodle"]
     override func viewDidLoad() {
         super.viewDidLoad()
+        pickeView.delegate = self
+        pickeView.dataSource = self
+        
         DogAPI.requestRandomImage(completionHandler:handleRandomImageResponse(imageData:error:))
        
         
@@ -32,5 +37,20 @@ class ViewController: UIViewController {
             self.imageView.image = image
         }
     }
+    
+    
+    
 }
-
+extension ViewController : UIPickerViewDelegate, UIPickerViewDataSource {
+    func numberOfComponents( in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        breeds.count
+    }
+    
+    
+    
+     
+}
