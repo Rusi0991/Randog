@@ -18,9 +18,6 @@ class ViewController: UIViewController {
         pickeView.delegate = self
         pickeView.dataSource = self
         
-        DogAPI.requestRandomImage(completionHandler:handleRandomImageResponse(imageData:error:))
-       
-        
     }
     
     func handleRandomImageResponse(imageData : DogImage? , error : Error?){
@@ -48,9 +45,14 @@ extension ViewController : UIPickerViewDelegate, UIPickerViewDataSource {
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         breeds.count
+        
     }
     
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        breeds[row]
+    }
     
-    
-     
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        DogAPI.requestRandomImage(completionHandler: handleRandomImageResponse(imageData:error:))
+    }
 }
