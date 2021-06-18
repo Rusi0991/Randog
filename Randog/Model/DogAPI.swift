@@ -8,16 +8,28 @@
 import Foundation
 import UIKit
 class DogAPI {
-    enum Endpoint : String {
-        case randomImageFromAllDogCollection = "https://dog.ceo/api/breeds/image/random"
-   
+    enum Endpoint {
+        case randomImageFromAllDogCollection
+        case randomImageForBreed(String)
         
         var url : URL {
-            return URL(string: self.rawValue)!
+            return URL(string: self.stringValue)!
+        }
+        
+        var stringValue: String {
+            switch self {
+            case .randomImageFromAllDogCollection:
+                return "https://dog.ceo/api/breeds/image/random"
+            case .randomImageForBreed(let breed) :
+            return "https://dog.ceo/api/breed/\(breed)/images/random"
+                
+            default:
+                <#code#>
+            }
         }
     }
-    class func requestRandomImage(completionHandler :@escaping (DogImage?, Error?) ->Void ){
-        let randomImageEndpoint = DogAPI.Endpoint.randomImageFromAllDogCollection.url
+    class func requestRandomImage(breed : String, completionHandler :@escaping (DogImage?, Error?) ->Void ){
+        let randomImageEndpoint = DogAPI.Endpoint.randomImageForBreed(breed).url
         
         let task = URLSession.shared.dataTask(with: randomImageEndpoint) { (data, responce, error) in
             guard let data = data else{
