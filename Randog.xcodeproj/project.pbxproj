@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		57572BA4266EEA5200D80586 /* DogImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57572BA3266EEA5200D80586 /* DogImage.swift */; };
+		57572BA6267C408B00D80586 /* BreedsListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57572BA5267C408B00D80586 /* BreedsListResponse.swift */; };
 		57ED6092266863FE0004D534 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57ED6091266863FE0004D534 /* AppDelegate.swift */; };
 		57ED6094266863FE0004D534 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57ED6093266863FE0004D534 /* SceneDelegate.swift */; };
 		57ED6096266863FE0004D534 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57ED6095266863FE0004D534 /* ViewController.swift */; };
@@ -19,6 +20,7 @@
 
 /* Begin PBXFileReference section */
 		57572BA3266EEA5200D80586 /* DogImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogImage.swift; sourceTree = "<group>"; };
+		57572BA5267C408B00D80586 /* BreedsListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedsListResponse.swift; sourceTree = "<group>"; };
 		57ED608E266863FE0004D534 /* Randog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Randog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		57ED6091266863FE0004D534 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		57ED6093266863FE0004D534 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 			children = (
 				57ED60AB26686A120004D534 /* DogAPI.swift */,
 				57572BA3266EEA5200D80586 /* DogImage.swift */,
+				57572BA5267C408B00D80586 /* BreedsListResponse.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -170,6 +173,7 @@
 				57ED6096266863FE0004D534 /* ViewController.swift in Sources */,
 				57572BA4266EEA5200D80586 /* DogImage.swift in Sources */,
 				57ED6092266863FE0004D534 /* AppDelegate.swift in Sources */,
+				57572BA6267C408B00D80586 /* BreedsListResponse.swift in Sources */,
 				57ED6094266863FE0004D534 /* SceneDelegate.swift in Sources */,
 				57ED60AC26686A120004D534 /* DogAPI.swift in Sources */,
 			);
